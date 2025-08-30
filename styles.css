@@ -1,61 +1,70 @@
-/*  your css code here. If applicable */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
-      margin: 0;
-      padding: 20px;
-    }
-h1{
-	text-align:center
-}
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
 
-    .book-library {
-      display: grid;
-      /* grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); */
-      row-gap: 20px;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
 
-    .book {
-      background:  #f8f8f8;
-		
-      border: 1px solid #eee;
-      border-radius: 8px;
-      padding: 15px;
-      text-align: center;
-      transition: transform 0.2s ease-in-out;
-    }
+        /* Book library grid */
+        .book-library {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
 
+        /* Individual book card */
+        .book {
+            background: #f8f8f8;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: left;
+            transition: transform 0.2s ease-in-out;
+        }
 
-    .book img {
-      width: 30%;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 6px;
-      margin-bottom: 10px;
-    }
+        .book:hover {
+            transform: translateY(-5px);
+        }
 
-    .book h3 {
-      font-size: 18px;
-      margin: 10px 0 5px;
-		text-align:left
-    }
+        /* Book image */
+        .book img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
 
-    .book p.author {
-      font-size: 14px;
-      color: #777777;
-      margin: 5px 0;
-				text-align:left
+        /* Book title */
+        .book h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+        }
 
-    }
+        /* Author name */
+        .book p.author {
+            font-size: 14px;
+            color: #777777;
+            margin: 5px 0;
+        }
 
-    .book p.price {
-      background: lightgreen;
-      font-size: 16px;
-      font-weight: bold;
-      color: #fff;
-      margin-top: 8px;
-		padding:10px
-    }
+        /* Price styling */
+        .book p.price {
+            background: #28a745;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            margin-top: 8px;
+            padding: 10px;
+            border-radius: 4px;
+            text-align: center;
+        }
